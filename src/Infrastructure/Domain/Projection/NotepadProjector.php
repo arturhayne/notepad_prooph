@@ -1,6 +1,6 @@
 <?php
 
-namespace Mindgeek\Infrastructure\Domain\Projection;
+namespace Notepad\Infrastructure\Domain\Projection;
 
 use Notepad\Domain\Model\Notepad\NotepadWasAdded;
 use Notepad\Domain\Model\Notepad\NoteWasAdded;
@@ -28,7 +28,7 @@ class NotepadProjector
      */
     public function __construct(ProjectionManager $projectionManager, NotepadReadModel $readModel)
     {
-        $this->streamCategory    = 'Mindgeek\Domain\Model\Notepad\Notepad\Notepad';
+        $this->streamCategory    = 'Notepad\Domain\Model\Notepad\Notepad';
         $this->projectionManager = $projectionManager;
         $this->readModel         = $readModel;
     }
