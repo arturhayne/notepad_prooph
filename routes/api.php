@@ -16,3 +16,5 @@ use Illuminate\Http\Request;
 Route::get('notepad/{id}/note', [\App\Http\Controllers\AddNoteController::class, 'store']);
 Route::get('notepad', [\App\Http\Controllers\AddNotepadController::class, 'store']);
 Route::get('user', [\App\Http\Controllers\AddUserController::class, 'store']);
+Route::get('notepad/{id}', [\App\Http\Controllers\RetrieveNotepadController::class, 'show']);
+
