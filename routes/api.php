@@ -13,6 +13,6 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('notepad/{id}/note', [\App\Http\Controllers\AddNoteController::class, 'store']);
+Route::get('notepad', [\App\Http\Controllers\AddNotepadController::class, 'store']);
+Route::get('user', [\App\Http\Controllers\AddUserController::class, 'store']);
