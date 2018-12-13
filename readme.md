@@ -67,9 +67,23 @@ To drop and recreate the necessary tables.
 
 The following routes are available - added as GET for simplicity
 
+- Create user
+```
 http://localhost/api/user
+```
+- Create Notepad
+```
 http://localhost/api/notepad
+```
+- Add Note
+```
 http://localhost/api/notepad/<notepad-id>/note
+```
+- Retrieve Note
+```
+http://localhost/api/notepad/<notepad-id>
+```
+
 
 ### Projections
 
